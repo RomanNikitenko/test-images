@@ -1,0 +1,346 @@
+******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/ubi9-based-images.txt
+******* 
+============================== 1 =====================================
+Docker image: registry.access.redhat.com/ubi9:9.3-1552
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 2 =====================================
+Docker image: registry.access.redhat.com/ubi9/ubi:9.3-1552
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 3 =====================================
+Docker image: registry.access.redhat.com/ubi9/ubi-init:9.3-10
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 4 =====================================
+Docker image: registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+
+--- OpenSSL command is not available
+--- RPM command is not available
+
+ERROR: OpenSSL and rpm commands are not available
+
+============================== 5 =====================================
+Docker image: registry.access.redhat.com/ubi9/ubi-minimal:9.3-1552
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 6 =====================================
+Docker image: registry.access.redhat.com/ubi9-init:9.3-10
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 7 =====================================
+Docker image: registry.access.redhat.com/ubi9-micro:9.3-13
+
+--- OpenSSL command is not available
+--- RPM command is not available
+
+ERROR: OpenSSL and rpm commands are not available
+
+============================== 8 =====================================
+Docker image: registry.access.redhat.com/ubi9-minimal:9.3-1552
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 9 =====================================
+Docker image: registry.access.redhat.com/ubi9/openssl:9.3-11
+
++++ OpenSSL command is available
+--- RPM command is not available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 10 =====================================
+Docker image: registry.access.redhat.com/ubi9/toolbox:9.3-12
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 11 =====================================
+Docker image: registry.access.redhat.com/ubi9/podman:9.3-10
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 12 =====================================
+Docker image: registry.access.redhat.com/ubi9/buildah:9.3-10
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 13 =====================================
+Docker image: registry.access.redhat.com/ubi9/skopeo:9.3-10
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 14 =====================================
+Docker image: registry.access.redhat.com/ubi9/httpd-24:1-301
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 15 =====================================
+Docker image: registry.access.redhat.com/ubi9/s2i-core:1-462
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 16 =====================================
+Docker image: registry.access.redhat.com/ubi9/s2i-base:1-489
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 17 =====================================
+Docker image: registry.access.redhat.com/ubi9/nginx-120:1-140
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 18 =====================================
+Docker image: registry.access.redhat.com/ubi9/nginx-122:1-49
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 19 =====================================
+Docker image: registry.access.redhat.com/ubi9/go-toolset:1.20.10-11
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 20 =====================================
+Docker image: registry.access.redhat.com/ubi9/perl-532:1-125
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 21 =====================================
+Docker image: registry.access.redhat.com/ubi9/python-39:1-165
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 22 =====================================
+Docker image: registry.access.redhat.com/ubi9/python-311:1-45
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 23 =====================================
+Docker image: registry.access.redhat.com/ubi9/php-80:1-110
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 24 =====================================
+Docker image: registry.access.redhat.com/ubi9/php-81:1-45
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 25 =====================================
+Docker image: registry.access.redhat.com/ubi9/ruby-30:1-142
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 26 =====================================
+Docker image: registry.access.redhat.com/ubi9/ruby-31:1-84
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 27 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-16:1-147
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 28 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-18:1-88
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 29 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-20:1-24
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 30 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-16-minimal:1-157
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 31 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-18-minimal:1-93
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 32 =====================================
+Docker image: registry.access.redhat.com/ubi9/nodejs-20-minimal:1-26
+
++++ OpenSSL command is available
++++ RPM command is available
+
+=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
+=== OpenSSL major version is: 3
+
+============================== 33 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-11:1.17-1.1705602311
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 34 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-17:1.17-1.1705573248
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 35 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-21:1.17-2.1705482269
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 36 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-11-runtime:1.17-1.1705602323
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 37 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-17-runtime:1.17-1.1705573249
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+============================== 38 =====================================
+Docker image: registry.access.redhat.com/ubi9/openjdk-21-runtime:1.17-2.1705482271
+
+--- OpenSSL command is not available
++++ RPM command is available
+
+=== OpenSSL version is: 3.0.7
+=== OpenSSL major version is: 3
+
+------------------------------- The following images contain problems ------------------------------- 
+registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+registry.access.redhat.com/ubi9-micro:9.3-13
+----------------------------------------------------------------------------------------------------- 
