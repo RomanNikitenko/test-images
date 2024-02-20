@@ -1,18 +1,18 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(dirname "$0")"
-IMAGES_LIST_SOURCE="$SCRIPT_DIR/default-images-list.txt"
-REPORT="$SCRIPT_DIR/report.txt"
+IMAGES_LIST_SOURCE="$SCRIPT_DIR/images-for-testing/default-images-list.txt"
 images_with_errors=()
-
 counter=0
-
-#clean up the file with report
-true >"$REPORT"
 
 if [ $# -gt 0 ]; then
   IMAGES_LIST_SOURCE="$1"
 fi
+
+FILENAME=$(basename "$IMAGES_LIST_SOURCE")
+REPORT="$SCRIPT_DIR/reports/report-$FILENAME"
+#clean up the file with report
+true >"$REPORT"
 
 {
   if [ -f "$IMAGES_LIST_SOURCE" ]; then
