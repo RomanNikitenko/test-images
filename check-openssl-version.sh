@@ -74,7 +74,7 @@ while IFS= read -r image; do
 
   output="$(docker run --rm --entrypoint="$entrypoint" "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"
 
-  if [[ "$output" == *"ERROR"* ]]; then
+  if [[ -z "$output" ]] || [[ "$output" == *"ERROR"* ]]; then
     images_with_errors+=("$image")
   fi
 
