@@ -62,12 +62,17 @@ while IFS= read -r image; do
   docker pull "$image"
   ((counter++))
 
+  entrypoint="sh"
+  if [[ "$image" == *"docker.io/golang"* ]]; then
+    entrypoint="bash"
+  fi
+
   {
     echo "============================== $counter ====================================="
     echo "Docker image: $image"
   } >>"$REPORT"
 
-  output="$(docker run --rm --entrypoint=bash "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"
+  output="$(docker run --rm --entrypoint="$entrypoint" "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"
 
   if [[ "$output" == *"ERROR"* ]]; then
     images_with_errors+=("$image")
