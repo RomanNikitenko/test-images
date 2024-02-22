@@ -1,4 +1,4 @@
-******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/ubi8-based-images.txt
+******* Using the following file to read images for testing: ./images-for-testing/ubi8-based-images.txt
 ******* 
 ============================== 1 =====================================
 Docker image: quay.io/devfile/universal-developer-image:ubi8-latest

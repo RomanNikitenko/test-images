@@ -1,4 +1,4 @@
-******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/cloud-dev-images.txt
+******* Using the following file to read images for testing: ./images-for-testing/cloud-dev-images.txt
 ******* 
 ============================== 1 =====================================
 Docker image: docker.io/alpine:3.18.3

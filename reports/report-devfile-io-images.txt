@@ -1,4 +1,4 @@
-******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/devfile-io-images.txt
+******* Using the following file to read images for testing: ./images-for-testing/devfile-io-images.txt
 ******* 
 ============================== 1 =====================================
 Docker image: registry.access.redhat.com/ubi8/dotnet-50:5.0-39

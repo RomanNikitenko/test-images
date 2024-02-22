@@ -1,4 +1,4 @@
-******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/ubi9-based-images.txt
+******* Using the following file to read images for testing: ./images-for-testing/ubi9-based-images.txt
 ******* 
 ============================== 1 =====================================
 Docker image: registry.access.redhat.com/ubi9:9.3-1552

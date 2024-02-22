@@ -1,4 +1,4 @@
-******* Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/default-images-list.txt
+******* Using the following file to read images for testing: ./images-for-testing/default-images-list.txt
 ******* 
 ============================== 1 =====================================
 Docker image: quay.io/devfile/universal-developer-image:ubi8-latest
@@ -124,6 +124,10 @@ ERROR: OpenSSL and rpm commands are not available
 ============================== 15 =====================================
 Docker image: docker.io/ubuntu:22.04
 
+--- OpenSSL command is not available
+--- RPM command is not available
+
+ERROR: OpenSSL and rpm commands are not available
 
 ============================== 16 =====================================
 Docker image: quay.io/devfile/composer:2.5.8

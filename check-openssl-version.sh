@@ -2,6 +2,10 @@
 
 SCRIPT_DIR="$(dirname "$0")"
 IMAGES_LIST_SOURCE="$SCRIPT_DIR/images-for-testing/default-images-list.txt"
+
+#for the following images bash should be used as entrypoint
+bash_images=("docker.io/golang" "docker.io/ubuntu:22.04")
+
 images_with_errors=()
 counter=0
 
@@ -63,9 +67,12 @@ while IFS= read -r image; do
   ((counter++))
 
   entrypoint="sh"
-  if [[ "$image" == *"docker.io/golang"* ]]; then
-    entrypoint="bash"
-  fi
+  for bash_image in "${bash_images[@]}"; do
+    if [[ "$image" == *"$bash_image"* ]]; then
+      entrypoint="bash"
+      break
+    fi
+  done
 
   {
     echo "============================== $counter ====================================="
