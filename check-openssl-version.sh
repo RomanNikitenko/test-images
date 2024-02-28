@@ -20,7 +20,8 @@ true >"$REPORT"
 
 {
   if [ -f "$IMAGES_LIST_SOURCE" ]; then
-    echo -e "******* Using the following file to read images for testing: $IMAGES_LIST_SOURCE\n******* "
+    echo "************** Using the following file to read images for testing: $IMAGES_LIST_SOURCE"
+    echo ""
   else
     echo -e "!!!!!!! File with images for testing not found: : $IMAGES_LIST_SOURCE.\n!!!!!!! Please provide path to the file with images for testing!"
     exit 1
@@ -29,36 +30,94 @@ true >"$REPORT"
 
 check_openssl_version() {
   echo ""
+  ################# OpenSSL command #################
   if command -v openssl &>/dev/null; then
-    echo "+++ OpenSSL command is available"
+    echo "+++ OpenSSL command is available:           $(openssl version -v)"
   else
     echo "--- OpenSSL command is not available"
   fi
 
+  ################# RPM command #################
   if command -v rpm &>/dev/null; then
-    echo "+++ RPM command is available"
+    echo "+++ RPM command     is available:           $(rpm -qa | grep openssl-libs | cut -d'-' -f3)"
   else
-    echo "--- RPM command is not available"
+    echo "--- RPM command     is not available"
+  fi
+
+  ################# Libs #################
+  libssl=$(find / -type f \( -name "libssl.so*" \) 2>/dev/null)
+  if [ -n "$libssl" ]; then
+    echo "+++ libssl          is found:               $libssl [find]"
+  else
+    for dir in /lib64 /usr/lib64 /lib /usr/lib /usr/local/lib64 /usr/local/lib; do
+      for file in "$dir"/libssl.so*; do
+        if [ -e "$file" ]; then
+          libssl="$file"
+          echo "+++ libssl    is found:                     $libssl [libs]"
+          break 2
+        fi
+      done
+    done
+  fi
+
+  if [ -z "$libssl" ]; then
+    echo "--- libssl          is not found"
+  fi
+
+  ################# Major version for all ways #################
+  echo ""
+  if command -v openssl &>/dev/null; then
+    openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
+    echo "=== [openssl] ==================  $openssl_major_version"
+  else
+    echo "=== [openssl] ==================  -"
+  fi
+
+  if command -v rpm &>/dev/null; then
+    openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
+    echo "=== [rpm]     ==================  $openssl_major_version"
+  else
+    echo "=== [rpm]     ==================  -"
+  fi
+
+  if [ -z "$libssl" ]; then
+    echo "=== [libs]    ==================  -"
+  elif [[ "${libssl}" == *"libssl.so.1"* ]]; then
+    echo "=== [libs]    ==================  1"
+  elif [[ "${libssl}" == *"libssl.so.3"* ]]; then
+    echo "=== [libs]    ==================  3"
+  else
+    echo "=== [libs]    ==================  -"
   fi
 
   echo ""
+  openssl_major_version=""
+  detection_way=""
+  
   if command -v openssl &>/dev/null; then
-    echo "=== OpenSSL version is: $(openssl version -v)"
-
     openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
-    echo "=== OpenSSL major version is: $openssl_major_version"
+    detection_way="opennsl command way"
   elif command -v rpm &>/dev/null; then
-    echo "=== OpenSSL version is: $(rpm -qa | grep openssl-libs | cut -d'-' -f3)"
-
     openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
-    echo "=== OpenSSL major version is: $openssl_major_version"
+    detection_way="rpm way"
+  elif [[ "${libssl}" == *"libssl.so.1"* ]]; then
+    openssl_major_version="1"
+    detection_way="libs way"
+  elif [[ "${libssl}" == *"libssl.so.3"* ]]; then
+    openssl_major_version="3"
+    detection_way="libs way"
+  fi
+
+  if [ -n "$openssl_major_version" ]; then
+    echo -e ">>> OpenSSL major version ======  $openssl_major_version         [$detection_way]"
   else
-    echo "ERROR: OpenSSL and rpm commands are not available"
+    echo ">>> ERROR: Can not detect OpenSSL version"
   fi
 }
 
 export -f check_openssl_version
 while IFS= read -r image; do
+  # skip empty lines and comments
   if [[ -z "$image" ]] || [[ "$image" == \#* ]]; then
     continue
   fi
@@ -75,8 +134,8 @@ while IFS= read -r image; do
   done
 
   {
-    echo "============================== $counter ====================================="
-    echo "Docker image: $image"
+    echo "========================================================================================================= [$counter] "
+    echo "********************** DOCKER IMAGE:        $image"
   } >>"$REPORT"
 
   output="$(docker run --rm --entrypoint="$entrypoint" "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"

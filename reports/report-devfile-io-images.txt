@@ -1,229 +1,329 @@
-******* Using the following file to read images for testing: ./images-for-testing/devfile-io-images.txt
-******* 
-============================== 1 =====================================
-Docker image: registry.access.redhat.com/ubi8/dotnet-50:5.0-39
+************** Using the following file to read images for testing: ./images-for-testing/devfile-io-images.txt
 
-+++ OpenSSL command is available
-+++ RPM command is available
+========================================================================================================= [1] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-50:5.0-39
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-============================== 2 =====================================
-Docker image: registry.access.redhat.com/ubi8/dotnet-60:6.0-44
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-+++ OpenSSL command is available
-+++ RPM command is available
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+========================================================================================================= [2] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-60:6.0-44
 
-============================== 3 =====================================
-Docker image: registry.access.redhat.com/ubi8/dotnet-31:3.1-61
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-============================== 4 =====================================
-Docker image: registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145
+========================================================================================================= [3] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-31:3.1-61
 
-+++ OpenSSL command is available
-+++ RPM command is available
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
-=== OpenSSL major version is: 3
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-============================== 5 =====================================
-Docker image: registry.access.redhat.com/ubi9/openjdk-17:1.17-1
+>>> OpenSSL major version ======  1         [opennsl command way]
 
---- OpenSSL command is not available
-+++ RPM command is available
+========================================================================================================= [4] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi9/go-toolset:1.19.13-4.1697647145
 
-=== OpenSSL version is: 3.0.7
-=== OpenSSL major version is: 3
++++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
++++ RPM command     is available:           3.0.7
++++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
-============================== 6 =====================================
-Docker image: icr.io/appcafe/open-liberty-devfile-stack:22.0.0.1
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
 
-+++ OpenSSL command is available
-+++ RPM command is available
+>>> OpenSSL major version ======  3         [opennsl command way]
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
-
-============================== 7 =====================================
-Docker image: icr.io/appcafe/open-liberty-devfile-stack:22.0.0.1-gradle
-
-+++ OpenSSL command is available
-+++ RPM command is available
-
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
-
-============================== 8 =====================================
-Docker image: registry.access.redhat.com/ubi8/openjdk-17:1.18-2
+========================================================================================================= [5] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-17:1.17-1
 
 --- OpenSSL command is not available
-+++ RPM command is available
++++ RPM command     is available:           3.0.7
++++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
-=== OpenSSL version is: 1.1.1k
-=== OpenSSL major version is: 1
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
 
-============================== 9 =====================================
-Docker image: registry.access.redhat.com/ubi9/openjdk-17:1.17-1
+>>> OpenSSL major version ======  3         [rpm way]
 
---- OpenSSL command is not available
-+++ RPM command is available
+========================================================================================================= [6] 
+********************** DOCKER IMAGE:        icr.io/appcafe/open-liberty-devfile-stack:22.0.0.1
 
-=== OpenSSL version is: 3.0.7
-=== OpenSSL major version is: 3
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-============================== 10 =====================================
-Docker image: registry.access.redhat.com/ubi8/openjdk-11:1.18-2
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
---- OpenSSL command is not available
-+++ RPM command is available
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-=== OpenSSL version is: 1.1.1k
-=== OpenSSL major version is: 1
+========================================================================================================= [7] 
+********************** DOCKER IMAGE:        icr.io/appcafe/open-liberty-devfile-stack:22.0.0.1-gradle
 
-============================== 11 =====================================
-Docker image: icr.io/appcafe/websphere-liberty-devfile-stack:22.0.0.1
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-============================== 12 =====================================
-Docker image: icr.io/appcafe/websphere-liberty-devfile-stack:22.0.0.1-gradle
-
-+++ OpenSSL command is available
-+++ RPM command is available
-
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
-
-============================== 13 =====================================
-Docker image: quay.io/devfile/universal-developer-image:ubi8-latest
-
-+++ OpenSSL command is available
-+++ RPM command is available
-
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
-
-============================== 14 =====================================
-Docker image: registry.access.redhat.com/ubi8/openjdk-11:1.18-2
+========================================================================================================= [8] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-17:1.18-2
 
 --- OpenSSL command is not available
-+++ RPM command is available
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-=== OpenSSL version is: 1.1.1k
-=== OpenSSL major version is: 1
+=== [openssl] ==================  -
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-============================== 15 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:latest
+>>> OpenSSL major version ======  1         [rpm way]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+========================================================================================================= [9] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-17:1.17-1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+--- OpenSSL command is not available
++++ RPM command     is available:           3.0.7
++++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
-============================== 16 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
 
-+++ OpenSSL command is available
-+++ RPM command is available
+>>> OpenSSL major version ======  3         [rpm way]
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+========================================================================================================= [10] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-11:1.18-2
 
-============================== 17 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
+--- OpenSSL command is not available
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+=== [openssl] ==================  -
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+>>> OpenSSL major version ======  1         [rpm way]
 
-============================== 18 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
+========================================================================================================= [11] 
+********************** DOCKER IMAGE:        icr.io/appcafe/websphere-liberty-devfile-stack:22.0.0.1
 
-+++ OpenSSL command is available
-+++ RPM command is available
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-============================== 19 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+========================================================================================================= [12] 
+********************** DOCKER IMAGE:        icr.io/appcafe/websphere-liberty-devfile-stack:22.0.0.1-gradle
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-============================== 20 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-+++ OpenSSL command is available
-+++ RPM command is available
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+========================================================================================================= [13] 
+********************** DOCKER IMAGE:        quay.io/devfile/universal-developer-image:ubi8-latest
 
-============================== 21 =====================================
-Docker image: registry.access.redhat.com/ubi8/nodejs-16:1-139
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-============================== 22 =====================================
-Docker image: quay.io/devfile/composer:2.5.8
+========================================================================================================= [14] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-11:1.18-2
 
-+++ OpenSSL command is available
---- RPM command is not available
+--- OpenSSL command is not available
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-=== OpenSSL version is: OpenSSL 3.1.2 1 Aug 2023 (Library: OpenSSL 3.1.2 1 Aug 2023)
-=== OpenSSL major version is: 3
+=== [openssl] ==================  -
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-============================== 23 =====================================
-Docker image: registry.access.redhat.com/ubi9/python-39:1-165
+>>> OpenSSL major version ======  1         [rpm way]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+========================================================================================================= [15] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:latest
 
-=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
-=== OpenSSL major version is: 3
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-============================== 24 =====================================
-Docker image: registry.access.redhat.com/ubi9/python-39:1-165
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-+++ OpenSSL command is available
-+++ RPM command is available
+>>> OpenSSL major version ======  1         [opennsl command way]
 
-=== OpenSSL version is: OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
-=== OpenSSL major version is: 3
+========================================================================================================= [16] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
 
-============================== 25 =====================================
-Docker image: quay.io/devfile/universal-developer-image:ubi8-latest
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
-+++ OpenSSL command is available
-+++ RPM command is available
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
 
-=== OpenSSL version is: OpenSSL 1.1.1k  FIPS 25 Mar 2021
-=== OpenSSL major version is: 1
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [17] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [18] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [19] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [20] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [21] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-139
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
+
+========================================================================================================= [22] 
+********************** DOCKER IMAGE:        quay.io/devfile/composer:2.5.8
+
++++ OpenSSL command is available:           OpenSSL 3.1.2 1 Aug 2023 (Library: OpenSSL 3.1.2 1 Aug 2023)
+--- RPM command     is not available
++++ libssl          is found:               /lib/libssl.so.3 [find]
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  -
+=== [libs]    ==================  3
+
+>>> OpenSSL major version ======  3         [opennsl command way]
+
+========================================================================================================= [23] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi9/python-39:1-165
+
++++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
++++ RPM command     is available:           3.0.7
++++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+
+>>> OpenSSL major version ======  3         [opennsl command way]
+
+========================================================================================================= [24] 
+********************** DOCKER IMAGE:        registry.access.redhat.com/ubi9/python-39:1-165
+
++++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
++++ RPM command     is available:           3.0.7
++++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+
+>>> OpenSSL major version ======  3         [opennsl command way]
+
+========================================================================================================= [25] 
+********************** DOCKER IMAGE:        quay.io/devfile/universal-developer-image:ubi8-latest
+
++++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
++++ RPM command     is available:           1.1.1k
++++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
+
+=== [openssl] ==================  1
+=== [rpm]     ==================  1
+=== [libs]    ==================  1
+
+>>> OpenSSL major version ======  1         [opennsl command way]
 
 ------------------------------- No problems were found for the tested list of images -------------------------------------- 
 --------------------------------------------------------------------------------------------------------------------------- 
