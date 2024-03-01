@@ -26,3 +26,13 @@ The functionality is similar to the previous section, so:
 | registry.access.redhat.com/ubi8/ubi-micro:8.9-7 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi8/ubi-micro/5ff3f50a831939b08d1b832a?architecture=amd64&image=65cba18ea05d0c4248609faf&container-tabs=packages)     |
 | registry.access.redhat.com/ubi9/ubi-micro:9.3-13 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58?architecture=amd64&image=65a8f97db7e4bede96526c22&container-tabs=packages)     |
 | registry.access.redhat.com/ubi9-micro:9.3-13 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi9-micro/61832b36dd607bfc82e66399?architecture=amd64&image=65a8f97db7e4bede96526c22&container-tabs=packages)     |
+
+# Test devfiles:
+- The following pattern is used for testing devfiles:
+`https://<che_fqdn>/#<url_to_a_raw_devfile>&che-editor=<url_to_a_raw_yaml_file>`. 
+- For example: https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://registry.devfile.io/devfiles/dotnet50/1.0.3&che-editor=https://gist.githubusercontent.com/RomanNikitenko/29845aab2a2d70dddd93b63d74910fca/raw/cf5024ad088a90fa0d536c1b152ef629fa062c9f/gistfile1.txt
+
+| Image | Devfile registry link | Workspace starts | Link to start a workspace |
+| :-------------: | :-------------: | :-------------: | :-------------: |
+| registry.access.redhat.com/ubi8/dotnet-50:5.0-39 | [.NET 5.0](https://registry.devfile.io/viewer/devfiles/community/dotnet50) | + | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://registry.devfile.io/devfiles/dotnet50/1.0.3&che-editor=https://gist.githubusercontent.com/RomanNikitenko/29845aab2a2d70dddd93b63d74910fca/raw/cf5024ad088a90fa0d536c1b152ef629fa062c9f/gistfile1.txt) |
+
