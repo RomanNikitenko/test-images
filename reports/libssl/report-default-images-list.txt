@@ -1,0 +1,128 @@
+************** Using the following file to read images for testing: ./images-for-testing/default-images-list.txt
+
+========================================================================================================= [1] 
+
+=== DOCKER IMAGE:        quay.io/devspaces/udi-rhel8:3.12
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [2] 
+
+=== DOCKER IMAGE:        quay.io/devfile/universal-developer-image:ubi8-latest
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [3] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8:8.9-1107.1706791207
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [4] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-145
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [5] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-18:1-86
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [6] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-20:1-22
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [7] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/pause:8.9-4
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [8] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ubi-micro:8.9-7
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [9] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [10] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9-micro:9.3-13
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [11] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9:9.3-1552
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [12] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-16:1-147
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [13] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-18:1-88
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [14] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-20:1-24
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [15] 
+
+=== DOCKER IMAGE:        docker.io/alpine:3.18.3
+>>> libssl               /lib/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [16] 
+
+=== DOCKER IMAGE:        docker.io/ubuntu:22.04
+>>> libssl               /usr/lib/x86_64-linux-gnu/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [17] 
+
+=== DOCKER IMAGE:        quay.io/devfile/composer:2.5.8
+>>> libssl               /lib/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [18] 
+
+=== DOCKER IMAGE:        icr.io/appcafe/open-liberty-devfile-stack:22.0.0.1
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [19] 
+
+=== DOCKER IMAGE:        docker.io/openjdk:21-ea-19-jdk
+>>> libssl               /lib64/libssl.so.1.1
+>>> libssl version       1
+
+========================================================================================================= [20] 
+
+=== DOCKER IMAGE:        docker.io/golang:1.21.1
+>>> libssl               /usr/lib/x86_64-linux-gnu/libssl.so.3
+>>> libssl version       3
+
+------------------------------- The following images contain problems ------------------------------- 
+registry.access.redhat.com/ubi8/pause:8.9-4
+registry.access.redhat.com/ubi8/ubi-micro:8.9-7
+registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+registry.access.redhat.com/ubi9-micro:9.3-13
+----------------------------------------------------------------------------------------------------- 

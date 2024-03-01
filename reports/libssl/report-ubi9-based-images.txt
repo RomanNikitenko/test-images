@@ -1,0 +1,234 @@
+************** Using the following file to read images for testing: ./images-for-testing/ubi9-based-images.txt
+
+========================================================================================================= [1] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9:9.3-1552
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [2] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ubi:9.3-1552
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [3] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ubi-init:9.3-10
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [4] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [5] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ubi-minimal:9.3-1552
+>>> libssl               /lib64/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [6] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9-init:9.3-10
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [7] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9-micro:9.3-13
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [8] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9-minimal:9.3-1552
+>>> libssl               /lib64/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [9] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openssl:9.3-11
+>>> libssl               /lib64/libssl.so.3
+>>> libssl version       3
+
+========================================================================================================= [10] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/toolbox:9.3-12
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [11] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/podman:9.3-10
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [12] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/buildah:9.3-10
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [13] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/skopeo:9.3-10
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [14] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/httpd-24:1-301
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [15] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/s2i-core:1-462
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [16] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/s2i-base:1-489
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [17] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nginx-120:1-140
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [18] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nginx-122:1-49
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [19] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/go-toolset:1.20.10-11
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [20] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/perl-532:1-125
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [21] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/python-39:1-165
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [22] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/python-311:1-45
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [23] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/php-80:1-110
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [24] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/php-81:1-45
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [25] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ruby-30:1-142
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [26] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/ruby-31:1-84
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [27] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-16:1-147
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [28] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-18:1-88
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [29] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-20:1-24
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [30] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-16-minimal:1-157
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [31] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-18-minimal:1-93
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [32] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/nodejs-20-minimal:1-26
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [33] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-11:1.17-1.1705602311
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [34] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-17:1.17-1.1705573248
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [35] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-21:1.17-2.1705482269
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [36] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-11-runtime:1.17-1.1705602323
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [37] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-17-runtime:1.17-1.1705573249
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+========================================================================================================= [38] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi9/openjdk-21-runtime:1.17-2.1705482271
+>>> libssl               /usr/lib64/libssl.so.3.0.7
+>>> libssl version       3
+
+------------------------------- The following images contain problems ------------------------------- 
+registry.access.redhat.com/ubi9/ubi-micro:9.3-13
+registry.access.redhat.com/ubi9-micro:9.3-13
+----------------------------------------------------------------------------------------------------- 

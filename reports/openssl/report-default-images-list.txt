@@ -5,7 +5,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -18,7 +17,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -31,7 +29,6 @@
 
 --- OpenSSL command is not available
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  -
 === [rpm]     ==================  1
@@ -44,7 +41,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -57,7 +53,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -70,7 +65,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -135,7 +129,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
 +++ RPM command     is available:           3.0.7
-+++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  3
@@ -148,7 +141,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
 +++ RPM command     is available:           3.0.7
-+++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  3
@@ -161,7 +153,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
 +++ RPM command     is available:           3.0.7
-+++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  3
@@ -174,7 +165,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.0.7 1 Nov 2022 (Library: OpenSSL 3.0.7 1 Nov 2022)
 +++ RPM command     is available:           3.0.7
-+++ libssl          is found:               /usr/lib64/libssl.so.3.0.7 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  3
@@ -187,7 +177,6 @@
 
 --- OpenSSL command is not available
 --- RPM command     is not available
-+++ libssl          is found:               /lib/libssl.so.3 [find]
 
 === [openssl] ==================  -
 === [rpm]     ==================  -
@@ -200,7 +189,6 @@
 
 --- OpenSSL command is not available
 --- RPM command     is not available
-+++ libssl          is found:               /usr/lib/x86_64-linux-gnu/libssl.so.3 [find]
 
 === [openssl] ==================  -
 === [rpm]     ==================  -
@@ -213,7 +201,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.1.2 1 Aug 2023 (Library: OpenSSL 3.1.2 1 Aug 2023)
 --- RPM command     is not available
-+++ libssl          is found:               /lib/libssl.so.3 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  -
@@ -226,7 +213,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 1.1.1k  FIPS 25 Mar 2021
 +++ RPM command     is available:           1.1.1k
-+++ libssl          is found:               /usr/lib64/libssl.so.1.1.1k [find]
 
 === [openssl] ==================  1
 === [rpm]     ==================  1
@@ -252,7 +238,6 @@
 
 +++ OpenSSL command is available:           OpenSSL 3.0.9 30 May 2023 (Library: OpenSSL 3.0.9 30 May 2023)
 --- RPM command     is not available
-+++ libssl          is found:               /usr/lib/x86_64-linux-gnu/libssl.so.3 [find]
 
 === [openssl] ==================  3
 === [rpm]     ==================  -

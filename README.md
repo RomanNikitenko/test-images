@@ -5,7 +5,13 @@
 
 - the script executes `docker pull` command for images defined in the file, then it executes some commands to detect `openssl` version 
 - the script skips empty lines and comments in the file 
-- `report-filename.txt` file is created with results of testing, `filename` - is name of the file with images for testing, for example: `report-default-images-list.txt`
+- `reports/openssl/report-filename.txt` file is created with results of testing, `filename` - is name of the file with images for testing, for example: `report-default-images-list.txt`
+
+## Testing logic related to determining libssl version in docker images
+The functionality is similar to the previous section, so:
+1. `./check-libssl-version.sh` - runs testing for list of images that defined in the `images-for-testing/default-images-list.txt` file 
+2. `./check-libssl-version.sh /some/path/on/file/system/file_name.txt` - runs testing for list of images that defined in the provided file 
+- `reports/libssl/report-filename.txt` file is created with results of testing, `filename` - is name of the file with images for testing, for example: `report-default-images-list.txt`
 
 ## Docker images from the https://registry.devfile.io/index
 

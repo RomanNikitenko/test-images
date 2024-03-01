@@ -14,7 +14,7 @@ if [ $# -gt 0 ]; then
 fi
 
 FILENAME=$(basename "$IMAGES_LIST_SOURCE")
-REPORT="$SCRIPT_DIR/reports/report-$FILENAME"
+REPORT="$SCRIPT_DIR/reports/openssl/report-$FILENAME"
 #clean up the file with report
 true >"$REPORT"
 
@@ -31,14 +31,14 @@ true >"$REPORT"
 check_openssl_version() {
   echo ""
   ################# OpenSSL command #################
-  if command -v openssl &>/dev/null; then
+  if command -v openssl >/dev/null 2>&1; then
     echo "+++ OpenSSL command is available:           $(openssl version -v)"
   else
     echo "--- OpenSSL command is not available"
   fi
 
   ################# RPM command #################
-  if command -v rpm &>/dev/null; then
+  if command -v rpm >/dev/null 2>&1; then
     echo "+++ RPM command     is available:           $(rpm -qa | grep openssl-libs | cut -d'-' -f3)"
   else
     echo "--- RPM command     is not available"
@@ -46,9 +46,7 @@ check_openssl_version() {
 
   ################# Libs #################
   libssl=$(find / -type f \( -name "libssl.so*" \) 2>/dev/null)
-  if [ -n "$libssl" ]; then
-    echo "+++ libssl          is found:               $libssl [find]"
-  else
+  if [ -z "$libssl" ]; then
     for dir in /lib64 /usr/lib64 /lib /usr/lib /usr/local/lib64 /usr/local/lib; do
       for file in "$dir"/libssl.so*; do
         if [ -e "$file" ]; then
@@ -66,38 +64,40 @@ check_openssl_version() {
 
   ################# Major version for all ways #################
   echo ""
-  if command -v openssl &>/dev/null; then
+  if command -v openssl >/dev/null 2>&1; then
     openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
     echo "=== [openssl] ==================  $openssl_major_version"
   else
     echo "=== [openssl] ==================  -"
   fi
 
-  if command -v rpm &>/dev/null; then
+  if command -v rpm >/dev/null 2>&1; then
     openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
     echo "=== [rpm]     ==================  $openssl_major_version"
   else
     echo "=== [rpm]     ==================  -"
   fi
 
-  if [ -z "$libssl" ]; then
-    echo "=== [libs]    ==================  -"
-  elif [[ "${libssl}" == *"libssl.so.1"* ]]; then
+  case "${libssl}" in
+  *libssl.so.1*)
     echo "=== [libs]    ==================  1"
-  elif [[ "${libssl}" == *"libssl.so.3"* ]]; then
+    ;;
+  *libssl.so.3*)
     echo "=== [libs]    ==================  3"
-  else
+    ;;
+  *)
     echo "=== [libs]    ==================  -"
-  fi
+    ;;
+  esac
 
   echo ""
   openssl_major_version=""
   detection_way=""
-  
-  if command -v openssl &>/dev/null; then
+
+  if command -v openssl >/dev/null 2>&1; then
     openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
     detection_way="opennsl command way"
-  elif command -v rpm &>/dev/null; then
+  elif command -v rpm >/dev/null 2>&1; then
     openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
     detection_way="rpm way"
   elif [[ "${libssl}" == *"libssl.so.1"* ]]; then

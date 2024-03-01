@@ -1,0 +1,294 @@
+************** Using the following file to read images for testing: ./images-for-testing/ubi8-based-images.txt
+
+========================================================================================================= [1] 
+
+=== DOCKER IMAGE:        quay.io/devfile/universal-developer-image:ubi8-latest
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [2] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8-init:8.9-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [3] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8:8.9-1107.1706791207
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [4] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ubi:8.9-1107.1706791207
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [5] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8-minimal:8.9-1108.1706795067
+>>> libssl               /lib64/libssl.so.1.1
+>>> libssl version       1
+
+========================================================================================================= [6] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/go-toolset:1.20.10-10
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [7] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-60:6.0-45
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [8] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-70:7.0-26
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [9] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-80:8.0-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [10] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-60-runtime:6.0-45
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [11] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-70-runtime:7.0-26
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [12] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/dotnet-80-runtime:8.0-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [13] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/skopeo:8.9-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [14] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/podman:8.9-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [15] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openssl:8.9-8
+>>> libssl               /lib64/libssl.so.1.1
+>>> libssl version       1
+
+========================================================================================================= [16] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/toolbox:8.9-8
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [17] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/buildah:8.9-3
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [18] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16:1-145
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [19] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-18:1-86
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [20] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-20:1-22
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [21] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-16-minimal:1-155
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [22] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-18-minimal:1-91
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [23] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nodejs-20-minimal:1-24
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [24] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ruby-25:1-239
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [25] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ruby-30:1-140
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [26] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ruby-31:1-82
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [27] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/nginx-122:1-47
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [28] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/perl-526:1-216
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [29] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/perl-532:1-123
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [30] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/php-74:1-110
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [31] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/php-80:1-108
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [32] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/httpd-24:1-299
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [33] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/s2i-base:1-486
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [34] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/s2i-core:1-459
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [35] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/python-311:1-43
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [36] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/python-27:2.7-231
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [37] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/python-36:1-228
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [38] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/python-39:1-163
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [39] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-8:1.18-2.1705572794
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [40] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-11:1.18-2.1705602259
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [41] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-17:1.18-2.1705573234
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [42] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-21:1.18-3.1705519633
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [43] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-8-runtime:1.18-2.1705572797
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [44] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-11-runtime:1.18-2.1705602291
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [45] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-17-runtime:1.18-2.1705573231
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [46] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/openjdk-21-runtime:1.18-2.1705519635
+>>> libssl               /usr/lib64/libssl.so.1.1.1k
+>>> libssl version       1
+
+========================================================================================================= [47] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/pause:8.9-4
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+========================================================================================================= [48] 
+
+=== DOCKER IMAGE:        registry.access.redhat.com/ubi8/ubi-micro:8.9-7
+>>> libssl               
+>>> ERROR:               Can not detect libssl version
+
+------------------------------- The following images contain problems ------------------------------- 
+registry.access.redhat.com/ubi8/pause:8.9-4
+registry.access.redhat.com/ubi8/ubi-micro:8.9-7
+----------------------------------------------------------------------------------------------------- 
