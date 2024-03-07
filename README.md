@@ -22,10 +22,13 @@ The functionality is similar to the previous section, so:
 
 | Image | Problem | Details |
 |-------------|-------------|-------------|
+| registry.access.redhat.com/ubi8/openssl:8.9-8 | error while loading shared libraries: libbrotlidec.so.1 | |
 | registry.access.redhat.com/ubi8/pause:8.9-4 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi8/pause/5f781a58055542887b1a874c?architecture=amd64&image=65cba352685c2cc95d5a0bf9&container-tabs=packages)     |
-| registry.access.redhat.com/ubi8/ubi-micro:8.9-7 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi8/ubi-micro/5ff3f50a831939b08d1b832a?architecture=amd64&image=65cba18ea05d0c4248609faf&container-tabs=packages)     |
+| registry.access.redhat.com/ubi8/ubi-micro:8.9-7 | `openssl` is absent <br /> error while loading shared libraries: libz.so.1 | see [Packages section](https://catalog.redhat.com/software/containers/ubi8/ubi-micro/5ff3f50a831939b08d1b832a?architecture=amd64&image=65cba18ea05d0c4248609faf&container-tabs=packages)     |
+| registry.access.redhat.com/ubi8-micro:8.9-10 | `openssl` is absent <br /> error while loading shared libraries: libz.so.1 | see [Packages section](https://catalog.redhat.com/software/containers/ubi8/ubi-micro/5ff3f50a831939b08d1b832a?architecture=amd64&image=65cba18ea05d0c4248609faf&container-tabs=packages)     |
 | registry.access.redhat.com/ubi9/ubi-micro:9.3-13 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi9/ubi-micro/615bdf943f6014fa45ae1b58?architecture=amd64&image=65a8f97db7e4bede96526c22&container-tabs=packages)     |
 | registry.access.redhat.com/ubi9-micro:9.3-13 | `openssl` is absent     | see [Packages section](https://catalog.redhat.com/software/containers/ubi9-micro/61832b36dd607bfc82e66399?architecture=amd64&image=65a8f97db7e4bede96526c22&container-tabs=packages)     |
+| registry.access.redhat.com/ubi9/openssl:9.3-11 | error while loading shared libraries: libstdc++.so.6 | |
 
 # Test devfiles:
 - The following pattern is used for testing devfiles:
