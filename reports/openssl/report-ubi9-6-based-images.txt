@@ -1,0 +1,461 @@
+************** Using the following file to read images for testing: /Users/rnikitenko/projects/test-images/images-for-testing/ubi9-6-based-images.txt
+
+========================================================================================================= [1] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ubi-stig:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [2] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9-micro:9.6
+
+--- OpenSSL command is not available
+--- RPM command     is not available
+--- libssl          is not found
+[WARNING] unknown libssl version: 
+[INFO] openssl and rpm commands are not available, trying to detect OpenSSL version...
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  -
+=== [libs]    ==================  -
+>>> ERROR: Can not detect OpenSSL version
+
+========================================================================================================= [3] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [4] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ubi:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [5] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ubi-init:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [6] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ubi-minimal:9.6
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /lib64/libssl.so.3 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [7] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nodejs-22:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [8] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/python-311:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [9] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/python-312:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [10] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/python-312-minimal:9.6
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [11] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/buildah:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [12] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/podman:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [13] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/go-toolset:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [14] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nginx-120:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [15] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/s2i-core:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [16] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/s2i-base:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [17] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ruby-33:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [18] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/openjdk-17-runtime:1.23
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.5.1
++++ libssl          is found:               /usr/lib64/libssl.so.3.5.1 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [19] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/openjdk-21-runtime:1.23
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.5.1
++++ libssl          is found:               /usr/lib64/libssl.so.3.5.1 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [20] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nodejs-22-minimal:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [21] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/php-83:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [22] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/httpd-24:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [23] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nginx-126:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [24] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nodejs-20:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [25] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/skopeo:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [26] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/php-80:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [27] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/perl-532:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [28] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/toolbox:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [29] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/python-39:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [30] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/ruby-30:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [31] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/openjdk-17:1.23
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.5.1
++++ libssl          is found:               /usr/lib64/libssl.so.3.5.1 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [32] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/openjdk-21:1.23
+
+--- OpenSSL command is not available
++++ RPM command     is available:           3.5.1
++++ libssl          is found:               /usr/lib64/libssl.so.3.5.1 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  -
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [rpm way]
+
+========================================================================================================= [33] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nodejs-20-minimal:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [34] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/php-82:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+========================================================================================================= [35] 
+********************** PODMAN IMAGE:        registry.access.redhat.com/ubi9/nginx-124:9.6
+
++++ OpenSSL command is available:           OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
++++ RPM command     is available:           3.2.2
++++ libssl          is found:               /usr/lib64/libssl.so.3.2.2 [libs]
+[INFO] libssl version is: 3
+
+=== [openssl] ==================  3
+=== [rpm]     ==================  3
+=== [libs]    ==================  3
+>>> OpenSSL major version ======  3         [openssl command way]
+
+------------------------------- The following images contain problems ------------------------------- 
+registry.access.redhat.com/ubi9-micro:9.6
+----------------------------------------------------------------------------------------------------- 

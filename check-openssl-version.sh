@@ -29,40 +29,87 @@ true >"$REPORT"
 } >>"$REPORT"
 
 check_openssl_version() {
-  echo ""
-  ################# OpenSSL command #################
-  if command -v openssl >/dev/null 2>&1; then
-    echo "+++ OpenSSL command is available:           $(openssl version -v)"
-  else
-    echo "--- OpenSSL command is not available"
-  fi
-
-  ################# RPM command #################
-  if command -v rpm >/dev/null 2>&1; then
-    echo "+++ RPM command     is available:           $(rpm -qa | grep openssl-libs | cut -d'-' -f3)"
-  else
-    echo "--- RPM command     is not available"
-  fi
-
-  ################# Libs #################
-  libssl=$(find / -type f \( -name "libssl.so*" \) 2>/dev/null)
-  if [ -z "$libssl" ]; then
-    for dir in /lib64 /usr/lib64 /lib /usr/lib /usr/local/lib64 /usr/local/lib; do
-      for file in "$dir"/libssl.so*; do
-        if [ -e "$file" ]; then
-          libssl="$file"
-          echo "+++ libssl    is found:                     $libssl [libs]"
-          break 2
-        fi
+  libssl_version=""
+  libssl=""
+  get_libssl_version() {
+    libssl=$(find / -type f \( -name "libssl.so*" \) 2>/dev/null)
+    if [ -z "$libssl" ]; then
+      for dir in /lib64 /usr/lib64 /lib /usr/lib /usr/local/lib64 /usr/local/lib; do
+        for file in "$dir"/libssl.so*; do
+          if [ -e "$file" ]; then
+            libssl="$file"
+            break 2
+          fi
+        done
       done
-    done
-  fi
+    fi
 
-  if [ -z "$libssl" ]; then
-    echo "--- libssl          is not found"
-  fi
+    if [ -n "$libssl" ]; then
+      echo "+++ libssl          is found:               $libssl [libs]"
+    else
+      echo "--- libssl          is not found"
+    fi
 
-  ################# Major version for all ways #################
+    case "${libssl}" in
+    *libssl.so.1*)
+      libssl_version="1"
+      ;;
+    *libssl.so.3*)
+      echo "[INFO] libssl version is: 3"
+      libssl_version="3"
+      ;;
+    *)
+      libssl_version=""
+      echo "[WARNING] unknown libssl version: $libssl"
+      ;;
+    esac
+  }
+
+  openssl_version=""
+  detection_way=""
+  get_openssl_version() {
+    if command -v openssl >/dev/null 2>&1; then
+      echo "+++ OpenSSL command is available:           $(openssl version -v)"
+    else
+      echo "--- OpenSSL command is not available"
+    fi
+
+    if command -v rpm >/dev/null 2>&1; then
+      rpm_version=$(rpm -q --qf '%{VERSION}\n' openssl-libs 2>/dev/null)
+      if [ -n "$rpm_version" ]; then
+        echo "+++ RPM command     is available:           $rpm_version"
+      else
+        echo "--- RPM command     is available but openssl-libs not found"
+      fi
+    else
+      echo "--- RPM command     is not available"
+    fi
+
+    # Always probe libssl so the report includes [libs] diagnostics for every image.
+    get_libssl_version
+
+    if command -v openssl >/dev/null 2>&1; then
+      openssl_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
+      if [ -n "$openssl_version" ]; then
+        detection_way="openssl command way"
+      fi
+    elif command -v rpm >/dev/null 2>&1; then
+      openssl_version=$(rpm -q --qf '%{VERSION}\n' openssl-libs 2>/dev/null | cut -d'.' -f1)
+      if [ -n "$openssl_version" ]; then
+        detection_way="rpm way"
+      fi
+    else
+      echo "[INFO] openssl and rpm commands are not available, trying to detect OpenSSL version..."
+      openssl_version=$libssl_version
+      if [ -n "$openssl_version" ]; then
+        detection_way="libs way"
+      fi
+    fi
+  }
+
+  echo ""
+  get_openssl_version
+
   echo ""
   if command -v openssl >/dev/null 2>&1; then
     openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
@@ -72,8 +119,12 @@ check_openssl_version() {
   fi
 
   if command -v rpm >/dev/null 2>&1; then
-    openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
-    echo "=== [rpm]     ==================  $openssl_major_version"
+    openssl_major_version=$(rpm -q --qf '%{VERSION}\n' openssl-libs 2>/dev/null | cut -d'.' -f1)
+    if [ -n "$openssl_major_version" ]; then
+      echo "=== [rpm]     ==================  $openssl_major_version"
+    else
+      echo "=== [rpm]     ==================  -"
+    fi
   else
     echo "=== [rpm]     ==================  -"
   fi
@@ -90,26 +141,8 @@ check_openssl_version() {
     ;;
   esac
 
-  echo ""
-  openssl_major_version=""
-  detection_way=""
-
-  if command -v openssl >/dev/null 2>&1; then
-    openssl_major_version=$(openssl version -v | cut -d' ' -f2 | cut -d'.' -f1)
-    detection_way="opennsl command way"
-  elif command -v rpm >/dev/null 2>&1; then
-    openssl_major_version=$(rpm -qa | grep openssl-libs | cut -d'-' -f3 | cut -d'.' -f1)
-    detection_way="rpm way"
-  elif [[ "${libssl}" == *"libssl.so.1"* ]]; then
-    openssl_major_version="1"
-    detection_way="libs way"
-  elif [[ "${libssl}" == *"libssl.so.3"* ]]; then
-    openssl_major_version="3"
-    detection_way="libs way"
-  fi
-
-  if [ -n "$openssl_major_version" ]; then
-    echo -e ">>> OpenSSL major version ======  $openssl_major_version         [$detection_way]"
+  if [ -n "$openssl_version" ]; then
+    echo ">>> OpenSSL major version ======  $openssl_version         [$detection_way]"
   else
     echo ">>> ERROR: Can not detect OpenSSL version"
   fi
@@ -122,7 +155,7 @@ while IFS= read -r image; do
     continue
   fi
 
-  docker pull "$image"
+  podman pull "$image"
   ((counter++))
 
   entrypoint="sh"
@@ -135,10 +168,10 @@ while IFS= read -r image; do
 
   {
     echo "========================================================================================================= [$counter] "
-    echo "********************** DOCKER IMAGE:        $image"
+    echo "********************** PODMAN IMAGE:        $image"
   } >>"$REPORT"
 
-  output="$(docker run --rm --entrypoint="$entrypoint" "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"
+  output="$(podman run --rm --entrypoint="$entrypoint" "$image" -c "$(declare -f check_openssl_version); check_openssl_version")"
 
   if [[ -z "$output" ]] || [[ "$output" == *"ERROR"* ]]; then
     images_with_errors+=("$image")
