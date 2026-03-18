@@ -1,0 +1,28 @@
+# Test images for the Dev Spaces 3.27:
+The following pattern is used for testing images:
+`https://<che_fqdn>/#<url_to_a_sample_project>?new&image=<ubi10_based_image_for_testing>&editor-image=<url_to_a_the_editor_image>`. <br />
+See:
+- https://eclipse.dev/che/docs/stable/end-user-guide/url-parameter-for-container-image/
+- https://eclipse.dev/che/docs/stable/end-user-guide/url-parameter-for-the-ide-image/
+ 
+For example: https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi10-minimal:10.0-1752576249&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c
+
+| Image | Workspace starts | Link to start a workspace |
+| :-------------: | :-------------: | :-------------: |
+| |udi |  |
+| quay.io/devfile/universal-developer-image:ubi8-latest | 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=quay.io/devfile/universal-developer-image:ubi8-latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| quay.io/devfile/universal-developer-image:ubi9-latest | 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=quay.io/devfile/universal-developer-image:ubi9-latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| quay.io/devfile/universal-developer-image:ubi10-latest | 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=quay.io/devfile/universal-developer-image:ubi10-latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| |ubi-8 |  |
+| registry.access.redhat.com/ubi8-minimal:latest| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi8-minimal:latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi8-minimal:8.10| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi8-minimal:8.10&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi8-minimal:8.9| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi8-minimal:8.9&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| |ubi-9 |  |
+| registry.access.redhat.com/ubi9-minimal:latest| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi9-minimal:latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi9-minimal:9.7| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi9-minimal:9.7&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi9-minimal:9.6| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi9-minimal:9.6&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| |ubi-10 |  |
+| registry.access.redhat.com/ubi10-minimal:latest| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi10-minimal:latest&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi10-minimal:10.1 | 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi10-minimal:10.1&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+| registry.access.redhat.com/ubi10-minimal:10.0| 🟢 | [click here](https://che-dogfooding.apps.che-dev.x6e0.p1.openshiftapps.com/#https://github.com/RomanNikitenko/web-nodejs-sample?new&image=registry.access.redhat.com/ubi10-minimal:10.0&editor-image=quay.io/redhat-user-workloads/devspaces-tenant/devspaces/code-rhel9:on-pr-efac10afdf25410acefad6a6ff62fb655fcbc68c) |
+
